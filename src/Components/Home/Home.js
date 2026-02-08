@@ -1,11 +1,14 @@
+import { Button } from "react-bootstrap";
 import img1 from "../../assets/img 1 of cars.jpeg";
 import img2 from "../../assets/img 2.jpeg"
 import img3 from "../../assets/img 3.jpeg";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const [currentImage, setCurrentImage] = useState(0);
     let images = [img1, img2, img3];
+    const navigate = useNavigate()
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -20,10 +23,10 @@ const Home = () => {
         alt="Travel"
         style={{
           width: "90%",
-          height: "800px",
+          height: "600px",
           objectFit: "cover",
           marginLeft: "5%",
-          marginTop: "5px",
+          marginTop: "15px",
           borderRadius: "10px",
           filter: "grayscale(20%) brightness(80%)",
         }}
@@ -32,7 +35,7 @@ const Home = () => {
         <h2
           style={{
             position: "absolute",
-            top: "40%",
+            top: "25%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -46,7 +49,7 @@ const Home = () => {
           style={{
             width: "60%",
             position: "absolute",
-            top: "50%",
+            top: "45%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             color: "white",
@@ -62,7 +65,7 @@ const Home = () => {
             style={{
               width: "60%",
               position: "absolute",
-              top: "100%",
+              top: "80%",
               left: "10%",
               transform: "translate(0, -50%)",
               color: "white",
@@ -75,7 +78,7 @@ const Home = () => {
             Hyderabad’s local attractions, plan an outstation trip, or book a
             Hyderabad to Srisailam cab package, we have you covered.
           </p>
-          <button style={{position: 'absolute', top: '100%', left: '80%'}}>Explore</button>
+          <Button onClick={() => {navigate('/services')}} style={{position: 'absolute', top: '77%', left: '80%'}}>Explore</Button>
         </div>
       </div>
     </div>
