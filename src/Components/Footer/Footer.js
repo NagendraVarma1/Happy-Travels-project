@@ -19,7 +19,7 @@ const Footer = () => {
           <p
             style={{
               fontSize: "1.2rem",
-              borderBottom: "0.3px solid lightgray",
+              borderBottom: "1px solid lightgray",
               padding: "5px",
             }}
           >
