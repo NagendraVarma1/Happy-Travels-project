@@ -11,6 +11,12 @@ import carFront1Img from "../../assets/car front.jpeg";
 import carFront2Img from "../../assets/car front 2.jpeg";
 import carView from "../../assets/car view from inside.jpeg";
 import parkingCarImg2 from "../../assets/parking cars 2.jpeg";
+import dzire from "../../assets/suzuki dzire.jpeg";
+import amaze from "../../assets/honda amaze.jpeg";
+import ertiga from "../../assets/ertiga.jpeg";
+import crysta from "../../assets/crysta.jpeg";
+import hycross from "../../assets/hycross.jpeg";
+import tempo from "../../assets/17 seater.jpeg";
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -33,10 +39,8 @@ const Home = () => {
         className={classes.carouselImage}
       />
       <div className={classes.heroContent}>
-        <h1 >Happy Travels</h1>
-        <h3>
-          Your Trusted Cab Service in Hyderabad
-        </h3>
+        <h1>Happy Travels</h1>
+        <h3>Your Trusted Cab Service in Hyderabad</h3>
         <div>
           <p>
             For all your travel requirements, Happy Travels is your one-stop
@@ -83,10 +87,44 @@ const Home = () => {
           </Button>
         </div>
       </div>
+      <div className={classes.ourCarsDiv}>
+        <h3>Our Cars</h3>
+        <div className={classes.ourCarsImgsDiv}>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={dzire} alt="dzire" />
+            <p className={classes.carModel}>Maruti Suzuki Dzire</p>
+          </div>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={amaze} alt="amaze" />
+            <p className={classes.carModel}>Honda Amaze</p>  
+          </div>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={ertiga} alt="ertiga" />
+            <p className={classes.carModel}>Maruti Suzuki Ertiga</p>
+          </div>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={crysta} alt="crysta" />
+            <p className={classes.carModel}>Toyota Innova Crysta</p>
+          </div>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={hycross} alt="hycross" />
+            <p className={classes.carModel}>Toyota Innova Hycross</p>
+          </div>
+          <div className={classes.carImgs}>
+            <p>starts from Rs. 2,500</p>
+            <img src={tempo} alt="tempo" />
+            <p className={classes.carModel}>17 seater Tempo Traveller</p>
+          </div>
+        </div>
+      </div>
       <div className={classes.ourServicesDiv}>
         <h3 className={classes.ourServicesHeading}>Our Services at a Glance</h3>
-        <div className={classes.servicesCardsDiv}
-        >
+        <div className={classes.servicesCardsDiv}>
           <Card className={classes.servicesCards}>
             <Card.Body>
               <Card.Title>Airport Cabs Hyderabad</Card.Title>
