@@ -82,10 +82,10 @@
 .carImgs {
   width: 80%;
   height: 300px;
-  margin: 50px 10%;
+  margin: 20px 10%;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .carImgs img {
@@ -330,6 +330,21 @@
   .ourCarsImgsDiv {
     grid-template-columns: auto auto;
   }
+
+  .carImgs {
+  width: 80%;
+  height: 250px;
+  margin: 20px 10%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.carImgs img {
+  width: 60%; 
+  height: 60%;
+  object-fit: cover;
+}
 
   .servicesCardsDiv {
     flex-wrap: wrap;
