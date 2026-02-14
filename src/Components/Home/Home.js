@@ -85,12 +85,7 @@ const Home = () => {
       </div>
       <div className={classes.ourServicesDiv}>
         <h3 className={classes.ourServicesHeading}>Our Services at a Glance</h3>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            margin: "30px 0",
-          }}
+        <div className={classes.servicesCardsDiv}
         >
           <Card className={classes.servicesCards}>
             <Card.Body>
@@ -137,55 +132,31 @@ const Home = () => {
           </Card>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "90%",
-          marginLeft: "5%",
-          padding: "50px 0",
-        }}
-      >
-        <div style={{ width: "47%", textAlign: "center" }}>
-          <h1 style={{ fontSize: "3.5rem" }}>
+      <div className={classes.experienceMainDiv}>
+        <div className={classes.experienceDiv1}>
+          <h1 className={classes.experienceHeading}>
             Hyderabad’s trusted travel partner for every journey.
           </h1>
           <img
             src={parkingCarImg}
             alt="parking cars"
-            style={{
-              width: "100%",
-              height: "500px",
-              objectFit: "cover",
-              borderRadius: "10px",
-              marginTop: "15px",
-            }}
+            className={classes.parkingCarImg}
           />
         </div>
-        <div style={{ width: "47%" }}>
-          <div style={{ display: "flex", gap: "10px", margin: "30px 0" }}>
+        <div className={classes.experienceDiv2}>
+          <div className={classes.experienceImgsDiv}>
             <img
               src={carFront1Img}
               alt="car front 1"
-              style={{
-                width: "49%",
-                height: "210px",
-                objectFit: "cover",
-                borderRadius: "10px",
-              }}
+              className={classes.experienceImgs}
             />
             <img
               src={carFront2Img}
               alt="car front 2"
-              style={{
-                width: "49%",
-                height: "210px",
-                objectFit: "cover",
-                borderRadius: "10px",
-              }}
+              className={classes.experienceImgs}
             />
           </div>
-          <p style={{ fontSize: "1.2rem" }}>
+          <p className={classes.experiencePara}>
             Welcome to Happy Travels — Hyderabad’s trusted travel partner for
             every journey. With over 3 years of experience, we’ve built our
             reputation on reliability, comfort, and transparent service. Whether
@@ -193,50 +164,32 @@ const Home = () => {
             spiritual visit to Srisailam, we make every mile smooth and
             stress-free.
           </p>
-          <p style={{ fontSize: "1.2rem" }}>
+          <p className={classes.experiencePara}>
             Our mission is simple — to provide safe, punctual, and affordable
             rides that make travel easy for everyone.
           </p>
-          <p style={{ fontSize: "1.2rem" }}>
+          <p className={classes.experiencePara}>
             From clean, well-maintained cars to friendly and professional
             driver, every ride with Happy Travels is designed to deliver
             comfort, convenience, and peace of mind.
           </p>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          marginTop: "50px",
-          backgroundColor: "#ece8e8",
-          justifyContent: "center",
-          padding: "50px 0",
-        }}
-      >
-        <Container style={{ width: "45%", marginLeft: "5%" }}>
+      <div className={classes.whyUsDiv}>
+        <Container className={classes.whyUsImgDiv}>
           <Row>
             <Col>
               <img
                 src={carView}
                 alt="car view"
-                style={{
-                  width: "100%",
-                  height: "300px",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                }}
+                className={classes.whyUsRow1Imgs}
               />
             </Col>
             <Col>
               <img
                 src={parkingCarImg2}
                 alt="parking cars 2"
-                style={{
-                  width: "100%",
-                  height: "300px",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                }}
+                className={classes.whyUsRow1Imgs}
               />
             </Col>
           </Row>
@@ -245,33 +198,28 @@ const Home = () => {
               <img
                 src={img3}
                 alt="car view 2"
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                }}
-              />{" "}
+                className={classes.whyUsRow2Imgs}
+              />
             </Col>
           </Row>
         </Container>
-        <div style={{ width: "45%", paddingRight: "10%", marginTop: "50px" }}>
+        <div className={classes.whyUsParaDiv}>
           <h1>Why Choose Happy Travels?</h1>
-          <p style={{ fontSize: "1.3rem" }}>
+          <p className={classes.whyUsPara}>
             At Happy Travels, we believe every ride should be more than just
             travel — it should be smooth, safe, and stress-free. Here’s what
             makes thousands of customers choose us every time.
           </p>
           <Card className="p-3 shadow mt-5">
             <h3>Reliable Service, Every Time</h3>
-            <p style={{ fontSize: "1.2rem" }}>
+            <p className={classes.whyUsPara}>
               We value your time. That’s why our drivers are always punctual and
               professional — ensuring your pickup is never delayed.
             </p>
           </Card>
           <Card className="p-3 shadow mt-5">
             <h3>Transparent Pricing</h3>
-            <p style={{ fontSize: "1.2rem" }}>
+            <p className={classes.whyUsPara}>
               No hidden costs or last-minute surprises. What you see is what you
               pay — honest fares, clear packages, and complete satisfaction.
             </p>
