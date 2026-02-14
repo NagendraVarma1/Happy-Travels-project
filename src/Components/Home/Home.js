@@ -26,19 +26,19 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div>
+    <div className={classes.heroSection}>
       <img
         src={images[currentImage]}
         alt="Travel"
         className={classes.carouselImage}
       />
-      <div>
-        <h2 className={classes.happyTravels}>Happy Travels</h2>
-        <h3 className={classes.h3Text}>
+      <div className={classes.heroContent}>
+        <h1 >Happy Travels</h1>
+        <h3>
           Your Trusted Cab Service in Hyderabad
         </h3>
         <div>
-          <p className={classes.p1Text}>
+          <p>
             For all your travel requirements, Happy Travels is your one-stop
             solution. Whether you need an airport transfer, want to explore
             Hyderabad’s local attractions, plan an outstation trip, or book a
