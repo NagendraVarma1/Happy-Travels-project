@@ -1,0 +1,110 @@
+
+.headerDiv {
+  display: flex;
+  background-color: lightgray;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuBox {
+  display: none;
+  cursor: pointer;
+}
+
+/* Desktop Nav */
+.navList {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.navList li {
+  cursor: pointer;
+}
+
+/* ========================= */
+/* Sidebar */
+/* ========================= */
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.active {
+  left: 0;
+}
+
+.sideNavList {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.sideNavList li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.closeBtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: right;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* ========================= */
+/* TABLET VIEW */
+/* ========================= */
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .headerDiv h1 {
+    font-size: 1.5rem;
+  }
+  .headerDiv{
+    justify-content: space-evenly;
+  }
+
+  .navList {
+    font-size: 1rem;
+  }
+    .navList li {
+        padding: 0 7px;
+    }
+}
+
+/* ========================= */
+/* MOBILE VIEW */
+/* ========================= */
+
+@media (max-width: 576px) {
+  .menuBox {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navList {
+    display: none;
+  }
+}

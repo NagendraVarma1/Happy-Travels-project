@@ -273,6 +273,12 @@
     margin: 20px 0;
   }
 
+  .showCarDetails {
+    width: 80%;
+    margin: 100px 10%;
+    padding: 80px 50px
+  }
+
   .ourCarsImgsDiv {
     grid-template-columns: auto;
   }
