@@ -20,6 +20,8 @@ import tempo from "../../assets/17 seater.jpeg";
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [showCarDetails, setShowCarDetails] = useState("");
+
   let images = [img1, img2, img3];
   const navigate = useNavigate();
 
@@ -32,30 +34,32 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className={classes.heroSection}>
-      <img
-        src={images[currentImage]}
-        alt="Travel"
-        className={classes.carouselImage}
-      />
-      <div className={classes.heroContent}>
-        <h1>Happy Travels</h1>
-        <h3>Your Trusted Cab Service in Hyderabad</h3>
-        <div>
-          <p>
-            For all your travel requirements, Happy Travels is your one-stop
-            solution. Whether you need an airport transfer, want to explore
-            Hyderabad’s local attractions, plan an outstation trip, or book a
-            Hyderabad to Srisailam cab package, we have you covered.
-          </p>
-          <Button
-            onClick={() => {
-              navigate("/services");
-            }}
-            className={classes.exploreButton}
-          >
-            Explore
-          </Button>
+    <div>
+      <div className={classes.heroSection}>
+        <img
+          src={images[currentImage]}
+          alt="Travel"
+          className={classes.carouselImage}
+        />
+        <div className={classes.heroContent}>
+          <h1>Happy Travels</h1>
+          <h3>Your Trusted Cab Service in Hyderabad</h3>
+          <div>
+            <p>
+              For all your travel requirements, Happy Travels is your one-stop
+              solution. Whether you need an airport transfer, want to explore
+              Hyderabad’s local attractions, plan an outstation trip, or book a
+              Hyderabad to Srisailam cab package, we have you covered.
+            </p>
+            <Button
+              onClick={() => {
+                navigate("/services");
+              }}
+              className={classes.exploreButton}
+            >
+              Explore
+            </Button>
+          </div>
         </div>
       </div>
       <div>
@@ -89,33 +93,83 @@ const Home = () => {
       </div>
       <div className={classes.ourCarsDiv}>
         <h3>Our Cars</h3>
+        <div
+          className={
+            showCarDetails === ""
+              ? classes.noCarDetails
+              : classes.showCarDetails
+          }
+        >
+          <div>
+            <div className={classes.closeButton} onClick={() => setShowCarDetails("")}>X</div>
+            <h4>{showCarDetails.model}</h4>
+            <p>
+              Rs. {showCarDetails.price} per KM for outstation trips (Min 100
+              kms travels). Excluding toll charges
+            </p>
+            <Button>Contact Now</Button>
+          </div>
+        </div>
         <div className={classes.ourCarsImgsDiv}>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({ model: "Maruti Suzuki Dzire", price: "14" })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={dzire} alt="dzire" />
             <p className={classes.carModel}>Maruti Suzuki Dzire</p>
           </div>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({ model: "Honda Amaze", price: "14" })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={amaze} alt="amaze" />
-            <p className={classes.carModel}>Honda Amaze</p>  
+            <p className={classes.carModel}>Honda Amaze</p>
           </div>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({ model: "Maruti Suzuki Ertiga", price: "18" })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={ertiga} alt="ertiga" />
             <p className={classes.carModel}>Maruti Suzuki Ertiga</p>
           </div>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({ model: "Toyota Innova Crysta", price: "20" })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={crysta} alt="crysta" />
             <p className={classes.carModel}>Toyota Innova Crysta</p>
           </div>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({ model: "Toyota Innova Hycross", price: "20" })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={hycross} alt="hycross" />
             <p className={classes.carModel}>Toyota Innova Hycross</p>
           </div>
-          <div className={classes.carImgs}>
+          <div
+            onClick={() =>
+              setShowCarDetails({
+                model: "17 seater Tempo Traveller",
+                price: "35",
+              })
+            }
+            className={classes.carImgs}
+          >
             <p>starts from Rs. 2,500</p>
             <img src={tempo} alt="tempo" />
             <p className={classes.carModel}>17 seater Tempo Traveller</p>

@@ -1,0 +1,67 @@
+.footerMainDiv {
+  background-color: black;
+  height: auto;
+  padding: 10px;
+  color: white;
+}
+.footerDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.workingHoursDiv {
+  border-right: 1px solid lightgray;
+  padding-right: 40px;
+}
+
+.workingHoursHeading {
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.workingHours {
+  font-size: 1.2rem;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+}
+
+.quickLinksDiv {
+  padding-left: 50px;
+}
+
+.heading {
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 576px) {
+  .footerDiv {
+    grid-template-columns: auto;
+    text-align: center;
+    gap: 20px;
+  }
+  .workingHoursDiv {
+    border-right: 0;
+  }
+}
+
+
+/* TABLET VIEW */
+@media (min-width: 577px) and (max-width: 992px) {
+  .footerDiv {
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap: 20px;
+  }
+}

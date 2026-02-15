@@ -21,12 +21,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   color: white;
   z-index: 2;
-  top: 5%;
-  gap: 20px;
+  top: 10%;
+  gap: 40px;
   font-size: 1.5rem;
 }
 
@@ -67,6 +67,41 @@
   width: 100%;
   text-align: center;
   padding: 50px 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.showCarDetails {
+  position:fixed;
+  width: 50%;
+  margin:100px 25%;
+  background-color: white;
+  padding: 100px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  top: 20%;
+  height: 300px;
+  box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+
+}
+
+.noCarDetails {
+  display: none;
 }
 
 .ourCarsDiv h3 {
@@ -304,8 +339,8 @@
     text-align: center;
     color: white;
     z-index: 2;
-    top: 2%;
-    gap: 20px;
+    top: 10%;
+    gap: 30px;
     font-size: 1rem;
   }
 

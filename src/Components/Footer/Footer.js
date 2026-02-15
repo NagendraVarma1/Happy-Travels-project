@@ -1,113 +1,61 @@
 import { useNavigate } from "react-router-dom";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        height: "350px",
-        padding: "10px",
-        color: "white",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <div
-          style={{ borderRight: "1px solid lightgray", paddingRight: "40px" }}
-        >
-          <p style={{ fontSize: "2rem", padding: "5px" }}>Working Hours</p>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              borderBottom: "1px solid lightgray",
-              padding: "5px",
-            }}
-          >
+    <div className={classes.footerMainDiv}>
+      <div className={classes.footerDiv}>
+        <div className={classes.workingHoursDiv}>
+          <p className={classes.workingHoursHeading}>Working Hours</p>
+          <p className={classes.workingHours}>
             Monday - Tuesday: 8:00 AM - 9:00 PM
           </p>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              borderBottom: "1px solid lightgray",
-              padding: "5px",
-            }}
-          >
+          <p className={classes.workingHours}>
             Wednesday - Thursday: 8:00 AM - 9:00 PM
           </p>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              borderBottom: "1px solid lightgray",
-              padding: "5px",
-            }}
-          >
+          <p className={classes.workingHours}>
             Friday - Saturday: 8:00 AM - 9:00 PM
           </p>
-          <p style={{ fontSize: "1.2rem", padding: "5px" }}>
-            Sunday: 8:00 AM - 9:00 PM
+          <p className={classes.workingHours}>Sunday: 8:00 AM - 9:00 PM</p>
+        </div>
+        <div className={classes.quickLinksDiv}>
+          <p className={classes.heading}>Quick Links</p>
+          <p className={classes.text}
+            onClick={() => navigate("/")}
+          >
+            Home
+          </p>
+          <p className={classes.text}
+            onClick={() => navigate("/about")}
+          >
+            About
+          </p>
+          <p
+            onClick={() => navigate("/services")}
+            className={classes.text}
+          >
+            Services
+          </p>
+          <p
+            onClick={() => navigate("/contact")}
+            className={classes.text}
+          >
+            Contact
           </p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "50%",
-          }}
-        >
-          <div>
-            <p style={{ fontSize: "2rem", padding: "5px" }}>Quick Links</p>
-            <p
-              onClick={() => navigate("/")}
-              style={{ fontSize: "1.2rem", padding: "5px", cursor: "pointer" }}
-            >
-              Home
-            </p>
-            <p
-              onClick={() => navigate("/about")}
-              style={{ fontSize: "1.2rem", padding: "5px", cursor: "pointer" }}
-            >
-              About
-            </p>
-            <p
-              onClick={() => navigate("/services")}
-              style={{ fontSize: "1.2rem", padding: "5px", cursor: "pointer" }}
-            >
-              Services
-            </p>
-            <p
-              onClick={() => navigate("/contact")}
-              style={{ fontSize: "1.2rem", padding: "5px", cursor: "pointer" }}
-            >
-              Contact
-            </p>
-          </div>
-          <div>
-            <p style={{ fontSize: "2rem", padding: "5px" }}>Contact info</p>
-            <p
-              style={{
-                fontSize: "1.2rem",
-                padding: "5px",
-              }}
-            >
-              Phone: +1 123-456-7890
-            </p>
-            <p
-              style={{
-                fontSize: "1.2rem",
-                padding: "5px",
-              }}
-            >
-              Address: 123 Main Street, Anytown, USA
-            </p>
-            <p
-              style={{
-                fontSize: "1.2rem",
-                padding: "5px",
-              }}
-            >
-              Email: info@happytravels.com
-            </p>
-          </div>
+        <div>
+          <p className={classes.heading}>Contact info</p>
+          <p className={classes.text}
+          >
+            Phone: +1 123-456-7890
+          </p>
+          <p className={classes.text}>
+            Address: 123 Main Street, Anytown, USA
+          </p>
+          <p className={classes.text}>
+            Email: info@happytravels.com
+          </p>
         </div>
       </div>
     </div>

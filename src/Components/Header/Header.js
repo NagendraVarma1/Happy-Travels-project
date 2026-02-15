@@ -9,6 +9,7 @@ const navigate = useNavigate();
         <ul style={{display: 'flex', justifyContent: 'space-around', width: '50%'}}>
             <li style={{cursor: 'pointer'}} onClick={() => navigate("/")}>Home</li>
             <li style={{cursor: 'pointer'}} onClick={() => navigate("/about")}>About</li>
+            <li style={{cursor: 'pointer'}} onClick={() => navigate("/ourcars")}>Our Cars</li>
             <li style={{cursor: 'pointer'}} onClick={() => navigate("/services")}>Services</li>
             <li style={{cursor: 'pointer'}} onClick={() => navigate("/contact")}>Contact</li>    
         </ul>
