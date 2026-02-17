@@ -82,13 +82,9 @@ const Home = () => {
             Step off the plane and straight into comfort with Happy Travels.
             Land. Relax. Ride.
           </p>
-          <Button
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
-            Call Now
-          </Button>
+          <a href="tel: 7795375321">
+            <Button>Call Now</Button>
+          </a>
         </div>
       </div>
       <div className={classes.ourCarsDiv}>
@@ -101,13 +97,20 @@ const Home = () => {
           }
         >
           <div>
-            <div className={classes.closeButton} onClick={() => setShowCarDetails("")}>X</div>
+            <div
+              className={classes.closeButton}
+              onClick={() => setShowCarDetails("")}
+            >
+              X
+            </div>
             <h4>{showCarDetails.model}</h4>
             <p>
               Rs. {showCarDetails.price} per KM for outstation trips (Min 100
               kms travels). Excluding toll charges
             </p>
+            <a href="tel: 7795375321">
             <Button>Contact Now</Button>
+          </a>
           </div>
         </div>
         <div className={classes.ourCarsImgsDiv}>

@@ -48,7 +48,7 @@ const Footer = () => {
           <p className={classes.heading}>Contact info</p>
           <p className={classes.text}
           >
-            Phone: +1 123-456-7890
+            Phone: 7795375321
           </p>
           <p className={classes.text}>
             Address: 123 Main Street, Anytown, USA
