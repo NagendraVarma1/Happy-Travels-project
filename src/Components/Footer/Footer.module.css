@@ -54,6 +54,9 @@
   .workingHoursDiv {
     border-right: 0;
   }
+  .quickLinksDiv {
+  padding-left: 0px;
+}
 }
 
 

@@ -282,6 +282,14 @@
   .ourCarsImgsDiv {
     grid-template-columns: auto;
   }
+  .carImgs{
+    width: 80%;
+    height: 250px;
+    margin: 20px 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
 
   .servicesCardsDiv {
     display: flex;
