@@ -23,44 +23,44 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.contactHeading{
-    width: 80%;
-    margin: 20px 10%;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+.contactHeading {
+  width: 80%;
+  margin: 20px 10%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.contactText{
-    width: 80%;
-    margin: 20px 10%;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
+.contactText {
+  width: 80%;
+  margin: 20px 10%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.contactInfoDiv{
-    width: 60%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    margin: 30px 20%;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.contactInfoDiv {
+  width: 60%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 20%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contactInfoDiv h3{
-    font-size: 1.8rem;
-    font-weight: bold;
+.contactInfoDiv h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-.contactInfoDiv p{
-    font-size: 1.2rem;
-    line-height: 1.5;
+.contactInfoDiv p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /* MOBILE VIEW */
@@ -72,6 +72,32 @@
   .pageName {
     font-size: 1.5rem;
   }
+  .contactHeading {
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 2rem;
+  }
+  .contactText {
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .contactInfoDiv {
+    width: 90%;
+    padding: 30px;
+    gap: 10px;
+    margin: 20px 5%;
+  }
+  .contactInfoDiv h3 {
+    font-size: 1.3rem;
+  }
+
+  .contactInfoDiv p {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
 /* TABLET VIEW */
@@ -81,5 +107,31 @@
   }
   .pageName {
     font-size: 2rem;
+  }
+  .contactHeading {
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 2rem;
+  }
+  .contactText {
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .contactInfoDiv {
+    width: 90%;
+    padding: 30px;
+    gap: 10px;
+    margin: 20px 5%;
+  }
+  .contactInfoDiv h3 {
+    font-size: 1.3rem;
+  }
+
+  .contactInfoDiv p {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
   }
 }

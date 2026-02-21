@@ -1,5 +1,5 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import img1 from "../../assets/img 1 of cars.jpeg";
+import img1 from "../../assets/img 1 of cars.jpeg"; 
 import img2 from "../../assets/img 2.jpeg";
 import img3 from "../../assets/img 3.jpeg";
 import { useState, useEffect } from "react";
