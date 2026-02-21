@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import QuickAccessBtn from "../QuickAccessBtn/QuickAccessBtn";
 
 
 const RootLayout = () => {
@@ -8,6 +9,7 @@ const RootLayout = () => {
     <>
       <Header />
       <Outlet />
+      <QuickAccessBtn />
       <Footer />
     </>
   );
